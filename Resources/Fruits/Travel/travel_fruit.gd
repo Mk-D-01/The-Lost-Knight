@@ -13,7 +13,7 @@ func getZones():
 	zones = gamemanager.TeleportZones
 	
 func teleport():
-	var teleportPosition = zones[randi_range(0,len(zones))].global_position
+	var teleportPosition = zones[randi_range(0,len(zones))-1].global_position
 	player.global_position = teleportPosition
 	pass
 

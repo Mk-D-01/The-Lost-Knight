@@ -13,7 +13,7 @@ func _ready() -> void:
 	
 	add_child(fruit)
 	fruit.global_position = $"Permanent Zone/1".global_position
-	spawner_timer.start(5)
+	spawner_timer.start(2)
 	
 	
 func spawn_fruit():
@@ -23,7 +23,7 @@ func spawn_fruit():
 	fruit.gamemanager = $"../gamemanager4"
 	
 	add_child(fruit)
-	var spawnPosition = spawn_zones[randi_range(0,len(spawn_zones))].global_position
+	var spawnPosition = spawn_zones[randi_range(0,len(spawn_zones))-1].global_position
 	fruit.global_position = spawnPosition
 	print("Spawned at")
 	print(spawnPosition)

@@ -9,7 +9,7 @@ func add_coin3():
 	print(score)
 	if score == max_score:
 		
-		get_tree().change_scene_to_file("")
+		get_tree().change_scene_to_file("res://scene/Level 4/level_4.tscn")
 		
 
 
